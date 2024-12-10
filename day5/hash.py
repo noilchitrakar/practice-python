@@ -24,6 +24,11 @@ class HashTable:
     def __getitem__(self,key):
         k=self.get_hash(key)
         return self.arr[k]
+    
+    def __delitem__(self,key):
+        d=self.get_hash(key)
+        self.arr[d]=None
+
     # def add(self,key,value):
     #     n=self.get_hash(key)
     #     self.arr[n]=value
@@ -42,6 +47,10 @@ hash['march 6']=9
 hash['march6']=120
 
 print(hash['march6'])
+
+print (hash.arr)
+print("\n")
+del hash['march 6']
 
 
 print(hash.arr)
