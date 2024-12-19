@@ -23,33 +23,5 @@ while (cuurent_address != None):
     print(cuurent_address.data ,'>')
     cuurent_address=cuurent_address.next
 print(None)
-#----------------------------------------leetcode two sums-------------------------------
-# def twoSum(nums, target):
-#         empty_array = []
-#         left = 0
-#         right = len(nums) - 1
-#         while(left < right):
-#                 tempSum = nums[left] + nums[right]
-#                 if tempSum == target:
-#                     return list(map(int,[left,right]))
-#                 elif tempSum > target:
-#                         right -= 1
-#                 elif tempSum < target:
-#                        left += 1 
-        
-#         return list((-1,-1))
-
-# def fact(n):   
-#     return n*(fact(n-1))
-
-# num=fact(5)
-
-# print(num)
-
-
-# suupose=[2,3,6,8]
-# nums_array = [3,3]
-# target = 6
-# result = twoSum(nums=nums_array,target=target)
-# print(result)           
+      
 
