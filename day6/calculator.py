@@ -23,34 +23,42 @@ while 1:
     ''')
     user_input=int(input("Enter the choice you want between 1 and 2 : "))
     if user_input==1:
-        fist=int(input("enter the first number"))
-        second=int(input("enter the second number"))
-        print("which operation do you want to perform")
-        operation=input('''enter the opeartion you want
-        for addition(+)
-        for subtraction(-)
-        for multiplication(*)
-        for divison(/)
-        for modulas(%)
-        for Floor divison(//)
-        for exponent(**)
-        ''')
-        if operation=='+':
-            print(addition(fist,second))#argument (sends the value to the function)
-        elif operation=='-':
-            print(subtraction(fist,second))#argument (sends the value to the function)
-        elif operation=='*':
-            print(multiplication(fist,second))#argument (sends the value to the function)
-        elif operation=='/':
-            print(divison(fist,second))#argument (sends the value to the function)
-        elif operation=='%':
-            print(modulas(fist,second))#argument (sends the value to the function)
-        elif operation=='//':
-            print(floorDivison(fist,second))#argument (sends the value to the function)
-        elif operation=='**':
-            print(exponent(fist,second))#argument (sends the value to the function)
-        else:
-            print("please enter a valid opeation")
+        while True:
+            fist=int(input("enter the first number"))
+            second=int(input("enter the second number"))
+            print("which operation do you want to perform")
+            operation=input('''enter the opeartion you want
+            for addition(+)
+            for subtraction(-)
+            for multiplication(*)
+            for divison(/)
+            for modulas(%)
+            for Floor divison(//)
+            for exponent(**)
+            ''')
+            if operation=='+':
+                print(addition(fist,second))#argument (sends the value to the function)
+                break   #i guess this will only break out of 1 loop(The inner most loop) 
+            elif operation=='-':
+                print(subtraction(fist,second))#argument (sends the value to the function)
+                break
+            elif operation=='*':
+                print(multiplication(fist,second))#argument (sends the value to the function)
+                break
+            elif operation=='/':
+                print(divison(fist,second))#argument (sends the value to the function)
+                break
+            elif operation=='%':
+                print(modulas(fist,second))#argument (sends the value to the function)
+                break
+            elif operation=='//':
+                print(floorDivison(fist,second))#argument (sends the value to the function)
+                break
+            elif operation=='**':
+                print(exponent(fist,second))#argument (sends the value to the function)
+                break
+            else:
+                print("please enter a valid opeation")
     elif user_input==2:
         print("Thanks for using the calculator")
         break
