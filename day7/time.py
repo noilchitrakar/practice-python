@@ -16,6 +16,7 @@ else:
     print("Good Night")
     print(f'The current time is',t.strftime("%H"))
 a=input('do you want to know the Date?')
+# here i can you regex to just execute if even yessssss is enetred 
 if a.lower()=='yes':
     print("the date is",t.strftime("%D"))
 else:
